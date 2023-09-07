@@ -3,11 +3,11 @@ title: "QM 2023 Week 1:<br>Getting Started with R"
 author: "Oliver Rittmann<br>Domantas Undzėnas"
 date: "September 8, 2023"
 output:
-  html_document:
+  html_notebook:
     toc: true
     toc_float: true
     css: css/lab.css
-  html_notebook:
+  html_document:
     toc: true
     toc_float: true
     css: css/lab.css
@@ -127,6 +127,18 @@ knitr::include_graphics("images/rstudio_interface.png")
   - **Environment**: Here you have an overview over all the objects currently loaded in your environment. You will learn more about objects later in the course.
   - **Files, Plots, Packages, Help, Viewer**: Plots and other things will appear here, don't worry too much about it for the moment.
 
+
+## Some remarks on ChatGPT (and other large language models)
+
+You have probably all tried out ChatGPT, and yes, it is impressive! Are you allowed to use ChatGPT and its alternatives for your assignments in this course? And if yes, do we encourage it? Here is our view on these questions:
+
+1) Yes, you are allowed to use ChatGPT. In fact, we neither see a way to fully prevent you from using it, nor do we think that trying to do so would be reasonable.
+
+2) In our assessment, large language models such as ChatGPT can be extremely helpful to those who know what they are doing, but they are not helpful at all if you have no idea what you are doing. That means: you yourself need a good understanding of what you want to do (this mostly refers to the lecture material), and a good understanding of how R works (this refers mostly to what you learn in this course) to productively work with ChatGPT. It will only be helpful to you if (1) you write precise prompts and (2) you are able to critically evaluate ChatGPT's responses (and spot the errors it makes). This is only possible if you learn quantitative methods and R by yourself first. Because of that, our advice is the following: 
+
++ For coding: Feel free to try out whether ChatGPT is able to solve specific problems that you encounter. But never let ChatGPT replace your own critical thinking. You always want to understand the code you use, no matter whether it comes from our material or from ChatGPT.
++ For answering specific questions (e.g. interpretation of a regression result): It may be interesting to check how ChatGPT would answer a particular question, but you really should think about the question and write the answer yourself. If you want to ask ChatGPT, make it after you came up with your own answer.
++ We suppose that all documents with your name on are written by yourself and a product of your own critical thinking process. It is a matter of academic integrity that this is actually the case.
 
 ## R as a basic calculator
 
@@ -831,7 +843,7 @@ weather_data <- read.dta("raw_data/weather_data_germany_2021.dta")
 ```
 
 
-The data contains yearly temperature averages of German cities as well as their geographical location (longitude and latitude). It comes from the "Deutscher Wetterdienst" and you can find it [here](https://cdc.dwd.de/portal/202204011005/index.html). Now that we have loaded the data, we can have a look at it.
+The data contains yearly temperature averages of German cities as well as their geographical location (longitude and latitude). It comes from the "Deutscher Wetterdienst" and you can find it [here](https://cdc.dwd.de/portal/202204011005). Now that we have loaded the data, we can have a look at it.
 
 With `head()`we can look at the first six rows of the data set:
 
@@ -1355,7 +1367,7 @@ In order to pass the homework assignment you need to tackle ALL problems of a pr
 
 ### Closing remarks.
 
-If you have any questions concerning the lecture or the tutorial please post them to the ILIAS forum or on Slack. We will answer them on a regular basis.
+If you have any questions concerning the lecture or the tutorial please post them on Slack. We will answer them on a regular basis.
 
 Do not hesitate to come to the office hours!
 
